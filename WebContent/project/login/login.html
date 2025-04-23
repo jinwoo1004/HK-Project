@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>한경닷컴 로그인 페이지입니다.</title>
+
+<link rel="stylesheet" href="../css/login.css">
+<script src="../js/login.js"></script>
+<!--  <script>
+	function test()
+	{
+		var frm = document.getElementById("login_form");
+		frm.submit();
+	}
+</script>
+-->
+</head>
+
+<body>
+	<div id="login">
+		<form id="login_form" action="login.jsp" method="post">
+			<div class="field_container">
+				<input type="text" name="id" placeholder="ID">
+			</div>
+
+			<div class="field_container">
+				<input type="Password" name="pw" placeholder="Password">
+				<!-- <button id="sign_in_button">
+					<span class="button_text"><a href="index.html">로그인</a></span>
+				</button> -->
+				<!-- 				<a href="#" class="mButton">로그인</a> -->
+				<button id="sign_in_button">
+					<span class="button_text">로그인</span>
+				</button>
+
+			</div>
+
+			<div id="sign_in_button" class="field_container">
+				<div id="sign_in_alternatives_container">
+					<div>
+						<a href="#" class="mButton" onclick="window.open('IDfound.html','window_name','width=1000,height=1000,location=no,status=no,scrollbars=yes');">ID찾기</a>&nbsp;&nbsp; 
+						<a href="#" class="mButton" onclick="window.open('passwdfound.html','window_name','width=1000,height=1000,location=no,status=no,scrollbars=yes');">비밀번호 찾기</a> 
+						<a href="#" class="mButton" onclick="window.open('join.html','회원가입','width=1000,height=1000,location=no,status=no,scrollbars=yes');">회원가입</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</div>
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
